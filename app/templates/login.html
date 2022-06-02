@@ -1,0 +1,26 @@
+{% block title %}{% endblock %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Ingreso</title>
+  <link href="https://fonts.googleapis.com/css?family=Asap" rel="stylesheet">
+  <link rel="stylesheet" href="{{url_for('static', filename='css/login.css')}}">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+
+<form class="form" action="/login" method="POST">
+  <div id="error"></div>
+  <input id="email" name="email" type="text" placeholder="Email">
+  <input id="password" name="password" type="password" placeholder="Contraseña">
+  <button type="submit">Entrar</button>
+</form>
+<!-- partial -->
+</body>
+</html>
+
+{% endblock %}
